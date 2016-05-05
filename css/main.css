@@ -68,3 +68,22 @@ h1 {
   background: #000;
   text-transform: uppercase;
 }
+nav ul{
+  text-align: center;
+  display: flex;
+}
+nav ul li {
+  width: 100%;
+  background: #fce428;
+}
+nav ul li a {
+  display: inline-block;
+  padding: 20px 0;
+  width: 100%;
+  color: #000;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #fff;
+  background: #000;
+}
