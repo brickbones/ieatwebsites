@@ -60,6 +60,11 @@ body{
   background: #333;
   background: url('http://img2.yeggi.com/images_q/241764/octopus-walterwhite-by-tod0');
 }
+p {
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 15px;
+}
 h1 {
   color: #fff;
   text-align: center;
@@ -86,4 +91,10 @@ nav ul li a {
 nav ul li a:hover {
   color: #fff;
   background: #000;
+}
+.container {
+  width: 70%;
+  margin: 40px auto;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.7);
 }
