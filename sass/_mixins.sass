@@ -1,0 +1,31 @@
+@mixin roundy($x: 8px)
+  border-radius: $x
+  -webkit-border-radius: $x
+  -moz-border-radius: $x
+  -o-border-radius: $x
+  -ms-border-radius: $x
+
+@mixin transition($a: 0.3s)
+  transition: $a
+  -webkit-transition: $a
+
+@mixin flex
+  display: -ms-flex
+  display: -webkit-flex
+  display: flex
+
+@mixin keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @-ms-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+
+@mixin animation($name,$time,$loop)
+  -webkit-animation: $name $time $loop
+  -moz-animation: $name $time $loop
+  -o-animation: $name $time $loop
+  animation: $name $time $loop

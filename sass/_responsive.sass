@@ -1,0 +1,111 @@
+@import "mixins"
+$break-small: 768px
+$break-medium: 991px
+$break-large: 1199px
+
+@media (max-width: $break-small)
+
+  .social
+    @include flex
+    flex-direction: column
+
+  .video-holder
+    height: 350px
+    width: 100%
+    overflow: hidden
+    background-size: cover
+    background-position: center
+    position: relative
+    float: none
+
+  .video-holder-dark
+    height: 350px
+    width: 100%
+    overflow: hidden
+    background-size: cover
+    background-position: center
+    position: relative
+    float: none
+
+  .ext-content-holder
+    width: 100%
+    height: auto
+    padding: 20px 0
+    background: #fff
+    position: relative
+    float: none
+    @include flex
+    justify-content: center
+    align-items: center
+
+  .ext-content-holder-dark
+    width: 100%
+    height: auto
+    padding: 20px 0
+    position: relative
+    float: none
+    @include flex
+    justify-content: center
+    align-items: center
+
+  .logo
+    bottom: -29px
+    left: -20px
+
+  a.join-c
+    display: block
+
+  .nav
+    background: $maingray
+    width: 100%
+    display: none
+    ul
+      flex-direction: column
+      margin: 16px 0
+      li
+        border-bottom: 1px solid #2D2D2D
+        padding: 10px
+        i
+          font-size: 30px
+
+  .navigation
+    background: $maingray
+    height: 94px
+    width: 100%
+    .logo-text
+      position: relative
+      top: 32px
+      left: 0px
+      max-width: 200px
+
+  .nav-icon1
+    width: 60px
+    height: 45px
+    right: 22px
+
+  .jota-p
+    img
+      max-width: 100%
+      width: 100%
+
+@media (min-width: $break-small) and  (max-width: $break-medium)
+
+  .nav
+    ul
+      li
+        a
+          font-size: 22px
+          i
+            font-size: 22px
+            top: 0px
+            position: relative
+
+  .jota-p
+    img
+      max-width: 50%          
+
+@media (min-width: $break-medium) and (max-width: $break-large)
+
+  .jota-p
+    img
+      max-width: 50%
