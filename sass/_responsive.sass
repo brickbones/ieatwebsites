@@ -18,27 +18,7 @@ $break-large: 1199px
     position: relative
     float: none
 
-  .video-holder-dark
-    height: 350px
-    width: 100%
-    overflow: hidden
-    background-size: cover
-    background-position: center
-    position: relative
-    float: none
-
   .ext-content-holder
-    width: 100%
-    height: auto
-    padding: 20px 0
-    background: #fff
-    position: relative
-    float: none
-    @include flex
-    justify-content: center
-    align-items: center
-
-  .ext-content-holder-dark
     width: 100%
     height: auto
     padding: 20px 0
@@ -88,7 +68,60 @@ $break-large: 1199px
       max-width: 100%
       width: 100%
 
+  .posts-container
+    li
+      &:nth-child(even)
+        .video-holder
+          float: none
+        .ext-content-holder
+          width: 100%
+          float: none
+  .watch
+    position: relative
+    color: #fff
+    background: #dd5303
+    display: inline-block
+    width: 100%
+    text-align: center
+    padding: 10px 0
+    font-size: 20px
+    font-weight: bold
+    margin-top: 15px
+
+  .featured-vid
+    .ext-content-holder
+      .ext-content
+        padding: 35px 0 0 0
+
 @media (min-width: $break-small) and  (max-width: $break-medium)
+
+  .video-holder
+    height: 350px
+    width: 100%
+    overflow: hidden
+    background-size: cover
+    background-position: center
+    position: relative
+    float: none
+
+  .ext-content-holder
+    width: 100%
+    height: auto
+    padding: 20px 0
+    position: relative
+    float: none
+    @include flex
+    justify-content: center
+    align-items: center
+
+  .posts-container
+    li
+      &:nth-child(even)
+        .video-holder
+          float: none
+        .ext-content-holder
+          width: 100%
+          float: none
 
   .nav
     ul
@@ -102,7 +135,19 @@ $break-large: 1199px
 
   .jota-p
     img
-      max-width: 50%          
+      max-width: 50%
+
+  .watch
+    position: relative
+    color: #fff
+    background: #dd5303
+    display: inline-block
+    width: 100%
+    text-align: center
+    padding: 10px 0
+    font-size: 20px
+    font-weight: bold
+    margin-top: 15px
 
 @media (min-width: $break-medium) and (max-width: $break-large)
 
