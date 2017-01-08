@@ -27,6 +27,23 @@ header
     position: relative
     bottom: 0
     bottom: -29px
+    width: 303px
+
+#eyes 
+  animation: blink 2s infinite
+  animation-timing-function: ease-in
+
+@keyframes blink
+  80%
+    transform: none
+  85%
+    transform: translateY(80px) scaleY(0)
+  90%
+    transform: none
+  95%
+    transform: translateY(80px) scaleY(0)
+  100%
+    animation-timing-function: ease-out
 
 .day
   background: #fff url(../img/day.jpg)

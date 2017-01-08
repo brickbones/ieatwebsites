@@ -7,7 +7,6 @@ $(document).ready(function(){
                 // Night time - If time is after 5PM or before 6AM
                 $('header').addClass('night');
 								$('.goodevening').show();
-
               }
         else if (hours > 6 && hours < 12){
                 // Morning - After 6am and before 12pm
