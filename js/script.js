@@ -11,7 +11,7 @@ $(document).ready(function(){
               }
         else if (hours > 6 && hours < 12){
                 // Morning - After 6am and before 12pm
-								$('header').addClass('sunset');
+								$('header').addClass('sunrise');
 								$('.goodmorning').show();
 								$('.day-bg').show();
 							}
